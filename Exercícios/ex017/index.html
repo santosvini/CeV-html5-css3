@@ -9,10 +9,27 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px = 1em
+            */
+            font-size: 1em;
+            /* font-weight: lighter normal bold bolder */
         }
 
-        h1, h2{
-            font-family: 'Times New Roman', Times, serif;
+        h1 {
+            /* shorthand font */
+            /* font-style -> font-weight -> font-size -> font-family */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em Helvetica;
         }
     </style>
 </head>
