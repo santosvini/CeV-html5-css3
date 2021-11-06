@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: lightseagreen;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+}
+
+.especial {
+  background: yellow;
+}
+
+.especial::before {
+  content: '⇒ ';
+}
+
+.especial::after {
+  content: ' ⇐'
+}
+
+/* Seletores personalizados
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-element
+> : children
+*/

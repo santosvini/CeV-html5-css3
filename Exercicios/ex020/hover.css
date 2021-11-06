@@ -1,0 +1,20 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  esconde  o paragrafo, sinal de maior é identificação de filho*/
+div > p {
+  display: none;
+}
+
+/* mostra o paragrafo quando o mouse passa por cima */
+div:hover > p {
+  display: block;
+  color: white;
+  background-color: red;
+  width: 200px;
+}
+
+div:hover {
+  color: red;
+}
