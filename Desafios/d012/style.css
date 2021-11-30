@@ -22,11 +22,22 @@ header {
   padding: 2px
 }
 
-
 header > h1 {
   font-family: 'Passion One';
   padding: 0.5em;
 }
- header > p {
-   font-family: 'Passion One';
- }
+
+header > p {
+  font-family: 'Passion One';
+}
+
+section {
+  background-color: gray;
+  margin: 5px;
+  padding: 4px;
+}
+
+section > p {
+  margin: 4px;
+  padding: auto;
+}
