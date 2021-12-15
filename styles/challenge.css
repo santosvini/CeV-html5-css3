@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  position: fixed;
+  font: 18px "Source Code Pro", monospace;
+  background: linear-gradient(to top, #3f87a6, #f69d3c);
+}
+
+header {
+  font: bolder 22px "Source Code Pro", monospace;
+  width: 98vw;
+  margin: 24px;
+  padding: 4px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+div > a {
+  margin: 4px;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div > a:hover {
+  color: white;
+  background-color: #0f1009;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 65vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4vh;
+}
+
+.content a {
+  padding: 2vh;
+  border: 1.5px solid #000000;
+  border-radius: 4px;
+  font: 18px "Source Code Pro", monospace;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.content a:hover {
+  background: #fff;
+  color: black;
+  opacity: 0.50;
+}
