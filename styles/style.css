@@ -43,47 +43,61 @@ div > a:hover {
 }
 
 main {
+  background:  linear-gradient(350deg, #3f87a6, #f69d3c);
+  width: 65vw;
+  height: 70vh;
   display: flex;
-  width: 100vw;
-  height: 50vh;
+  margin: auto;
   align-items: center;
   justify-content: center;
 }
 
-main > div {
-  width: 66vw;
-  border-radius: 8px;
-  font: 18px "Source Code Pro", monospace;
+.container {
+  margin: 100px;
+  max-width: 90vw;
+  border-radius: 4px;
+  text-align: center;
 }
 
 aside.name {
-  width: 65vw;
+  width: 42vw;
   margin: 12px;
-  padding: 10px;
-  align-items: center;
+  padding: 12px;
   text-align: center;
   justify-content: center;
 }
 
 aside.description {
-  width: 65vw;
+  width: 42vw;
   margin: 12px;
-  padding: 10px;
-  align-items: center;
+  padding: 12px;
   text-align: center;
   justify-content: center;
 }
 
 h1 {
   margin: 8px;
-  padding: 6px;
+  padding: 4px;
   justify-content: center;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 p {
+  font: bolder 18px "Source Code Pro", monospace;
+  display: block;
   margin: 6px;
   padding: 4px;
   line-height: 1.4em;
-  font-weight: lighter;
+  font: lighter 24px;
+}
+
+
+@media (min-width: 380px) { 
+
+  main .container {
+    font-size: 12px;
+    margin: 10px;
+    max-width: 66vw;
+    max-height: 70vh;
+  }
 }

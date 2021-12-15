@@ -23,7 +23,7 @@ header {
   font: bolder 22px "Source Code Pro", monospace;
   width: 98vw;
   margin: 24px;
-  padding: 4px;
+  padding: 14px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -43,21 +43,24 @@ div > a:hover {
 }
 
 main {
+  background: linear-gradient(350deg, #3f87a6, #f69d3c);
+  width: 90vw;
+  height: 55vh;
   display: flex;
-  width: 100vw;
-  height: 65vh;
+  margin: auto;
   align-items: center;
   justify-content: center;
 }
 
-main .content {
+div.content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4vh;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8vh;
 }
 
 .content a {
-  padding: 2vh;
+  margin: 0 15px;
+  padding: 12px;
   border: 1.5px solid #000000;
   border-radius: 4px;
   font: 18px "Source Code Pro", monospace;
@@ -70,4 +73,21 @@ main .content {
   background: #fff;
   color: black;
   opacity: 0.50;
+}
+
+@media (max-width: 380px) {
+  main .content {
+    margin-top: 25px;
+    padding: 15px; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vh;
+}
+
+.content a {
+    margin: 1vw;
+    padding: 2.5vh; 
+    font-size: 10px;
+  }
+
 }
