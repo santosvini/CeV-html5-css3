@@ -92,12 +92,12 @@ p {
 }
 
 
-@media (min-width: 380px) { 
+@media (max-width: 568px) { 
 
   main .container {
-    font-size: 12px;
+    font-size: 14px;
     margin: 10px;
-    max-width: 66vw;
-    max-height: 70vh;
+    max-width: 69vw;
+    max-height: 74vh;
   }
 }

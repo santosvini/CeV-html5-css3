@@ -31,7 +31,7 @@ header {
 
 div > a {
   margin: 4px;
-  padding: 8px;
+  padding: 6px;
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -44,50 +44,112 @@ div > a:hover {
 
 main {
   background: linear-gradient(350deg, #3f87a6, #f69d3c);
-  width: 90vw;
-  height: 55vh;
+  width: 75vw;
+  height: 45vh;
   display: flex;
   margin: auto;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
 
 div.content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8vh;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4vh;
+  margin: 80px;
 }
 
 .content a {
-  margin: 0 15px;
-  padding: 12px;
+  margin: 0 12px;
+  padding: 4px;
   border: 1.5px solid #000000;
   border-radius: 4px;
   font: 18px "Source Code Pro", monospace;
   font-weight: bold;
   color: #000000;
+  text-align: center;
   text-decoration: none;
 }
 
 .content a:hover {
-  background: #fff;
+  background: #ffffff;
   color: black;
-  opacity: 0.50;
+  opacity: 0.30;
 }
 
-@media (max-width: 380px) {
-  main .content {
-    margin-top: 25px;
-    padding: 15px; 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3vh;
+div.links {
+  position: absolute;
+  top: 92%;
+  right: 42.4%;
+  margin: 4px 10px;
+  padding: 2px;
+}
+
+footer > a {
+  font: bolder 22px "Source Code Pro", monospace;
+  width: 86vw;
+  color: black;
+  text-decoration: none;
+  margin: 14px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > a:hover {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  main {
+    background: linear-gradient(350deg, #3f87a6, #f69d3c);
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.content {
+    font-size: 14px;
+    margin: 12px;
+    padding: 8px;
+    max-width: 69vw;
+    max-height: 74vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .content a {
     margin: 1vw;
-    padding: 2.5vh; 
+    padding: .5vh;
+    width: 14vw;
+    height: 6vh;
     font-size: 10px;
+    border: 1.5px solid #000000;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  div.links {
+    position: absolute;
+    top: 93%;
+    right: 19.4%;
+    margin: 4px 10px;
+    padding: 2px;
+  }
+
+  footer > a {
+    font: bolder 22px "Source Code Pro", monospace;
+    text-decoration: none;
+    margin: 14px;
+    padding: 10px;
   }
 
 }
