@@ -91,13 +91,20 @@ p {
   font: lighter 24px;
 }
 
+@media (min-width: 368px) and (max-width: 768px) { 
 
-@media (max-width: 568px) { 
-
-  main .container {
-    font-size: 14px;
-    margin: 10px;
-    max-width: 69vw;
-    max-height: 74vh;
+  .container {
+    font-size: 10px;
+    margin: 40px;
+    width: 70vw;
+    height: 80vh;
   }
+
+  p {
+    font-size: 10px;
+    display: flex;
+    margin: 6px;
+    padding: 4px;
+  }
+
 }
