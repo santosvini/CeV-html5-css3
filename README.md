@@ -5,7 +5,6 @@
   e práticas de desafios reais de montagem e design de uma página web.
 </p>
 
-
 ## Links
 
 <a href="https://github.com/santosvini/CeV-html5-css3/tree/master/Exercicios" target="_blank">Exercícios</a>
